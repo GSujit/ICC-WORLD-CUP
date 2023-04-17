@@ -16,6 +16,7 @@ As the World-cup 2023 is round the clock, so in our project we Scrapped data of 
 ##Technology Used
 
 ###Concepts
+
 1) BeautifulSoup: To scrape the data efficiently from the links by using its inbuilt functions.
 2) Pandas: To create a dataframe and read the excel files
 3) matplotlib.pyplot: To plot the graph out of the data created in dataframe and to save the graphs created and to save excel files.
@@ -28,10 +29,12 @@ As the World-cup 2023 is round the clock, so in our project we Scrapped data of 
 10) mongoose: it basically acts like a medium between node.js and mongodb which helps to get the data from the database i.e. mongodb
 
 ###Working
+
 First we scraped the data of all the players using beautifulsoup and then we plotted line and bar graphs using pandas and matplotlib.pyplot and saved all the files. Then we created the frontend of the website using hbs, css and js then we created a file called app.js in src folder where we connected to the database i.e. mongodb using mongoose, in this file we set template engine as hbs i.e. handlebars in which all the files were coded. Then in routes folder we created a main.js file in which we are serving the files created in hbs to the client as per the request. Here we are fetching data from the database which is required while serving the file.
 Further, index.hbs in views folder is the home page or landing page of our website where the user is given options to choose which player's statistics he/she wants to view or which player he/she wants to compare with.
 
 ##Usage Instructions
+
 first download all the files from our repository, make sure that your local system has mongodb, mongoose and mongodbcompass installed. Also, make sure that your local system has nodemon,npm and all other frameworks mentioned in our package.json installed.
 Just simply open command shell of your local system in Adminstrative mode and type the command "mongod" to start the server and then open mongodbcompass and then get connected to your server.
 Now simply open the terminal and type "npm start" so you would get a text in terminal "server started listening on port::5556" after that open your favourite web browser and then type in the url section "localhost:5556". Done! you are now able to access the website.
